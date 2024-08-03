@@ -5,12 +5,13 @@ body {
 }
 
 .sidebar {
-  width: 250px;
+  width: 200px;
   height: 100vh;
   position: fixed;
   top: 0;
   left: 0;
   overflow-y: auto;
+  overflow-x: hidden; 
 }
 
 #nav-header {
@@ -43,8 +44,8 @@ body {
 }
 
 #main-doc {
-  margin-left: 250px;
-  padding: 20px;
+  margin-left: 200px;
+  padding-left: 10px;
 }
 
 pre {
