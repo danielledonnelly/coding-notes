@@ -61,6 +61,14 @@ code {
   font-size: 14px;
 }
 
+.tab-pane {
+  width: 100%;
+}
+pre code {
+  white-space: pre-wrap; 
+  word-break: break-word; 
+}
+
 ul {
   list-style: none; 
 }
@@ -78,6 +86,12 @@ ul li::before {
 a {
   color: #00BEEF;
   text-decoration: solid;
+}
+
+
+/* I wanted to pull my hair our for about half an hour because I didn't understand why my my HTML and CSS sections reached the full width of the screen while the others didn't even though they were functionally and structurally exactly the same. It was some weird .d-flex nonsense that didn't apply to the first two tabs for some bizarre reason. I overwrote by changing the display to block.*/
+.d-flex {
+  display: block !important;
 }
 
 
