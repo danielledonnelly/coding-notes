@@ -1,5 +1,5 @@
 body {
-  background-color: #121212;
+  background-color: #1b1b1b;
   color: #ffffff;
   font-family: Arial, sans-serif;
 }
@@ -12,6 +12,7 @@ body {
   left: 0;
   overflow-y: auto;
   overflow-x: hidden; 
+  background-color: #2b2b2b !important;
 }
 
 #nav-header {
@@ -28,7 +29,7 @@ body {
   display: block;
   width: 100%;
   color: grey !important;
-  background-color: #212529 !important;
+  background-color: #121212 !important;
   border: none;
   border-radius: 5px;
   padding: 10px 20px;
@@ -49,7 +50,7 @@ body {
 }
 
 pre {
-  background-color: #2d2d2d;
+  background-color: #333333 !important;
   color: #ffffff;
   padding: 15px;
   border-radius: 5px;
@@ -75,7 +76,7 @@ ul {
 
 ul li::before {
   content: "✦";
-  color: #ffffff; 
+  color: #f3f3f3; 
   font-weight: bold;
   display: inline-block;
   width: 2em; 
@@ -84,8 +85,34 @@ ul li::before {
 }
 
 a {
-  color: #00BEEF;
+  color: #00beef;
   text-decoration: solid;
+}
+
+h1 { 
+  font-size: 40px !important;
+  font-weight: bolder;
+}
+
+h2 {
+  font-size: 36px !important;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+h5 {
+  color: #bffbff;
+  font-size: 16px;
+  font-style: italic;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 

@@ -12,7 +12,7 @@
 <body>
   <div class="d-flex">
     <div class="sidebar bg-dark p-4">
-      <h2 class="text-center text-light mt-3" id="nav-header">Code Notes</h2>
+      <h2 class="text-center" id="nav-header">Learn...</h2>
       <div class="nav flex-column nav-pills" id="myTab" role="tablist">
         <a class="nav-link active nav-item" id="html-tab" data-bs-toggle="tab" href="#html" role="tab" aria-controls="html" aria-selected="true">HTML</a>
         <a class="nav-link nav-item" id="css-tab" data-bs-toggle="tab" href="#css" role="tab" aria-controls="css" aria-selected="false">CSS</a>
@@ -92,52 +92,155 @@
           <p>Forms are used to collect user inputs. Below is an example of a simple HTML form:</p>
           <pre><code>&lt;form action="/submit-form" method="post"&gt;
   &lt;label for="name"&gt;Name:&lt;/label&gt;
-  &lt;input type="text" id="name" name="name"&gt;
+  &lt;input type="text" id="name" name="name" required&gt;
   &lt;br&gt;
+            
   &lt;label for="email"&gt;Email:&lt;/label&gt;
-  &lt;input type="email" id="email" name="email"&gt;
+  &lt;input type="email" id="email" name="email" required&gt;
   &lt;br&gt;
+          
+  &lt;label for="age"&gt;Age:&lt;/label&gt;
+  &lt;input type="number" id="age" name="age"&gt;
+  &lt;br&gt;
+          
+  &lt;label for="gender"&gt;Gender:&lt;/label&gt;
+  &lt;select id="gender" name="gender"&gt;
+    &lt;option value="male"&gt;Male&lt;/option&gt;
+    &lt;option value="female"&gt;Female&lt;/option&gt;
+    &lt;option value="other"&gt;Other&lt;/option&gt;
+  &lt;/select&gt;
+  &lt;br&gt;
+          
+  &lt;label for="comments"&gt;Comments:&lt;/label&gt;
+  &lt;textarea id="comments" name="comments" rows="4" cols="50"&gt;&lt;/textarea&gt;
+  &lt;br&gt;
+          
+  &lt;label for="newsletter"&gt;Subscribe to newsletter:&lt;/label&gt;
+  &lt;input type="checkbox" id="newsletter" name="newsletter"&gt;
+  &lt;br&gt;
+          
   &lt;input type="submit" value="Submit"&gt;
 &lt;/form&gt;</code></pre>
+<form action="/submit-form" method="post">
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name" required>
+  <br>
+  
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" required>
+  <br>
+
+  <label for="age">Age:</label>
+  <input type="number" id="age" name="age">
+  <br>
+
+  <label for="gender">Gender:</label>
+  <select id="gender" name="gender">
+    <option value="male">Male</option>
+    <option value="female">Female</option>
+    <option value="other">Other</option>
+  </select>
+  <br>
+
+  <label for="comments">Comments:</label>
+  <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+  <br>
+
+  <label for="newsletter">Subscribe to newsletter:</label>
+  <input type="checkbox" id="newsletter" name="newsletter">
+  <br>
+
+  <input type="submit" value="Submit">
+</form>
+<br>
+<h5>This form looks cursed, but don't worry! We'll be revisiting it later.</h5>
+<br>  
 
           <h3>HTML Tables</h3>
           <p>Tables are used to display data in a tabular format. Below is an example of a simple HTML table:</p>
           <pre><code>&lt;table&gt;
-  &lt;tr&gt;
-    &lt;th&gt;Name&lt;/th&gt;
-    &lt;th&gt;Age&lt;/th&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;John&lt;/td&gt;
-    &lt;td&gt;30&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;Jane&lt;/td&gt;
-    &lt;td&gt;25&lt;/td&gt;
-  &lt;/tr&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Name&lt;/th&gt;
+      &lt;th&gt;Age&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Dani&lt;/td&gt;
+      &lt;td&gt;25&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Sarah&lt;/td&gt;
+      &lt;td&gt;28&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
 &lt;/table&gt;</code></pre>
-
-          <h3>HTML Lists</h3>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Age</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Dani</td>
+      <td>25</td>
+    </tr>
+    <tr>
+      <td>Sarah</td>
+      <td>28</td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<h5>This table looks cursed, but don't worry! We'll be revisiting it later.</h5>
+<br>  
+          <h4>HTML Lists</h4>
           <p>HTML supports ordered (numbered) and unordered (bulleted) lists. Below are examples of each:</p>
-          <pre><code>&lt;h4&gt;Unordered List:&lt;/h4&gt;
+          <pre><code>&lt;h3&gt;Grocery List&lt;/h3&gt;
 &lt;ul&gt;
-  &lt;li&gt;Item 1&lt;/li&gt;
-  &lt;li&gt;Item 2&lt;/li&gt;
-  &lt;li&gt;Item 3&lt;/li&gt;
+  &lt;li&gt;Bananas&lt;/li&gt;
+  &lt;li&gt;Crackers&lt;/li&gt;
+  &lt;li&gt;Butter&lt;/li&gt;
 &lt;/ul&gt;
-
-&lt;h4&gt;Ordered List:&lt;/h4&gt;
+            
+&lt;h4&gt;Top 3 Games&lt;/h4&gt;
 &lt;ol&gt;
-  &lt;li&gt;Item 1&lt;/li&gt;
-  &lt;li&gt;Item 2&lt;/li&gt;
-  &lt;li&gt;Item 3&lt;/ol&gt;</code></pre>
+  &lt;li&gt;Dicey Dungeons&lt;/li&gt;
+  &lt;li&gt;Genshin Impact&lt;/li&gt;
+  &lt;li&gt;Life is Strange&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+
+<h4>Grocery List</h4>
+<ul>
+  <li>Bananas</li>
+  <li>Crackers</li>
+  <li>Butter</li>
+</ul>
+
+<h4>Top 3 Games</h4>
+<ol>
+  <li>Dicey Dungeons</li>
+  <li>Genshin Impact</li>
+  <li>Life is Strange</li>
+</ol>
+
+<h5>Note that the unordered list uses stars for bullet points. This is because of the CSS below that applies to all unordered list items in this doc.</h5>
+<pre><code>ul li::before {
+  content: "✦";
+}</code></pre>
+
+
 
           <h3>HTML Media</h3>
           <p>HTML supports various media elements, such as images, audio, and video. Here are examples:</p>
           <h4>Image</h4>
-          <pre><code>&lt;img src="path/to/image.jpg" alt="Description of image" width="500" height="300"&gt;</code></pre>
-
-          <h4>Audio</h4>
+          <pre><code>&lt;img src="https://static.wikia.nocookie.net/silly-cat/images/f/f7/Apple_Cat.jpg/revision/latest/smart/width/250/height/250?cb=20240116165838" alt="An image of a silly cat with an apple" width="200" height="200"&gt;</code></pre>
+            <img src="https://static.wikia.nocookie.net/silly-cat/images/f/f7/Apple_Cat.jpg/revision/latest/smart/width/250/height/250?cb=20240116165838" alt="An image of a silly cat with an apple" width="200" height="200"><br>
+            <br>
+            <h4>Audio</h4>
           <pre><code>&lt;audio controls&gt;
   &lt;source src="path/to/audio.mp3" type="audio/mpeg"&gt;
   Your browser does not support the audio element.
