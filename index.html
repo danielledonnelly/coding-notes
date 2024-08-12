@@ -252,39 +252,60 @@
             <br>
             <br>
           <h4>Video</h4>
-          <pre><code>&lt;video width="600" controls&gt;
-&lt;source src="path/to/video.mp4" type="video/mp4"&gt;
+          <pre><code>&lt;video width="200px" controls&gt;
+  &lt;source src="videos/crow.mp4" type="video/mp4"&gt;
   Your browser does not support the video tag.
 &lt;/video&gt;</code></pre>
+          <video width="200px" controls>
+            <source src="videos/crow.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <br><br>
 
-          <h4>Iframe</h4>
-          <pre><code>&lt;iframe src="https://www.example.com" width="600" height="400"&gt;&lt;/iframe&gt;</code></pre>
+          <h4>IFrame</h4>
+          <pre><code>&lt;iframe width="560" height="315" 
+  src="https://www.youtube.com/embed/84Vi1Mbhzsw" 
+  title="YouTube video player" 
+  frameborder="0" 
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+  allowfullscreen&gt;
+&lt;/iframe&gt;</code></pre>
+          <iframe width="560" height="315" 
+  src="https://www.youtube.com/embed/84Vi1Mbhzsw" 
+  title="YouTube video player" 
+  frameborder="0" 
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+  allowfullscreen>
+</iframe>
+<h5>Fun fact: this is my reaction to learning React.</h5>
+          
+<br>
+
 
           <h3>HTML Canvas</h3>
-          <p>The HTML <code>&lt;<a href="https://www.w3schools.com/html/html5_canvas.asp" target="_blank">canvas</a>&gt;</code> element is used to draw graphics on a web page via JavaScript. Below is an example of how to use the <code>&lt;canvas&gt;</code> element.</p>
+          <p>The HTML <code>&lt;<a href="https://www.w3schools.com/html/html5_canvas.asp" target="_blank">canvas</a>&gt;</code> element is used to draw graphics on a web page via JavaScript.</p>
           <pre><code>&lt;canvas id="myCanvas" width="400" height="200" style="border:1px solid #ffffff;"&gt;&lt;/canvas&gt;
 &lt;script&gt;
-// Get the canvas element by its ID
-var canvas = document.getElementById('myCanvas');
-// Get the 2D drawing context
-var ctx = canvas.getContext('2d');
+  // Get the canvas element by its ID
+  var canvas = document.getElementById('myCanvas');
+  // Get the 2D drawing context
+  var ctx = canvas.getContext('2d');
 
-// Set the fill style to a color
-ctx.fillStyle = '#00BEEF';
-// Draw a filled rectangle
-ctx.fillRect(10, 10, 150, 100);
+  // Set the fill style to a color
+  ctx.fillStyle = '#00BEEF';
+  // Draw a filled rectangle
+  ctx.fillRect(10, 10, 150, 100);
 
-// Set the stroke style to a color
-ctx.strokeStyle = '#FFFFFF';
-// Draw a rectangle outline
-ctx.strokeRect(200, 10, 150, 100);
+  // Set the stroke style to a color
+  ctx.strokeStyle = '#FFFFFF';
+  // Draw a rectangle outline
+  ctx.strokeRect(200, 10, 150, 100);
 
-// Set the font style
-ctx.font = '20px Arial';
-// Draw text on the canvas
-ctx.fillText('Hello Canvas', 50, 180);
-&lt;/script&gt;
-</code></pre>
+  // Set the font style
+  ctx.font = '20px Arial';
+  // Draw text on the canvas
+  ctx.fillText('Hello Canvas', 50, 180);
+&lt;/script&gt;</code></pre>
             <canvas id="myCanvas" width="400" height="200" style="border:1px solid #ffffff;"></canvas>
           <script>
             // Get the canvas element by its ID
@@ -307,6 +328,7 @@ ctx.fillText('Hello Canvas', 50, 180);
             // Draw text on the canvas
             ctx.fillText('Hello Canvas', 50, 180);
           </script>
+          <br><br>
 
           <h3>HTML Attributes</h3>
           <p>Attributes provide additional information about HTML elements. They are always included in the opening tag and usually come in name/value pairs like <code>name="value"</code>. Some common attributes are listed below. Each of these attributes (except for alt) are <a href="https://www.w3schools.com/tags/ref_standardattributes.asp">global</a>, meaning they can be used universally with all HTML elements.</p>
