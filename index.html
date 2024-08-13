@@ -14,11 +14,16 @@
     <div class="sidebar bg-dark p-4">
       <h2 class="text-center" id="nav-header">Learn...</h2>
       <div class="nav flex-column nav-pills" id="myTab" role="tablist">
-        <a class="nav-link active nav-item" id="html-tab" data-bs-toggle="tab" href="#html" role="tab" aria-controls="html" aria-selected="true">HTML</a>
-        <a class="nav-link nav-item" id="css-tab" data-bs-toggle="tab" href="#css" role="tab" aria-controls="css" aria-selected="false">CSS</a>
-        <a class="nav-link nav-item" id="javascript-tab" data-bs-toggle="tab" href="#javascript" role="tab" aria-controls="javascript" aria-selected="false">JavaScript</a>
-        <a class="nav-link nav-item" id="bootstrap-tab" data-bs-toggle="tab" href="#bootstrap" role="tab" aria-controls="bootstrap" aria-selected="false">Bootstrap</a>
-        <a class="nav-link nav-item" id="react-tab" data-bs-toggle="tab" href="#react" role="tab" aria-controls="react" aria-selected="false">React</a>
+        <a class="nav-link active nav-item" id="html-tab" data-bs-toggle="tab" href="#html" role="tab"
+          aria-controls="html" aria-selected="true">HTML</a>
+        <a class="nav-link nav-item" id="css-tab" data-bs-toggle="tab" href="#css" role="tab" aria-controls="css"
+          aria-selected="false">CSS</a>
+        <a class="nav-link nav-item" id="javascript-tab" data-bs-toggle="tab" href="#javascript" role="tab"
+          aria-controls="javascript" aria-selected="false">JavaScript</a>
+        <a class="nav-link nav-item" id="bootstrap-tab" data-bs-toggle="tab" href="#bootstrap" role="tab"
+          aria-controls="bootstrap" aria-selected="false">Bootstrap</a>
+        <a class="nav-link nav-item" id="react-tab" data-bs-toggle="tab" href="#react" role="tab" aria-controls="react"
+          aria-selected="false">React</a>
       </div>
     </div>
     <div class="content p-4" id="main-doc">
@@ -26,7 +31,8 @@
         <div class="tab-pane fade show active" id="html" role="tabpanel" aria-labelledby="html-tab">
           <h2>HTML Notes</h2>
           <p>HTML (HyperText Markup Language) is the standard language for creating web pages and web applications.</p>
-          <p>Below you can see an example of a boilerplate HTML document that includes various elements. HTML elements typically have an opening and closing tag with content in between.</p>
+          <p>Below you can see an example of a boilerplate HTML document that includes various elements. HTML elements
+            typically have an opening and closing tag with content in between.</p>
           <pre><code>&lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt;
   &lt;head&gt;
@@ -50,57 +56,47 @@
 </code></pre>
           <h3>Common HTML Elements</h3>
           <ul>
-            <li><code>&lt;<a href="https://www.w3schools.com/tags/tag_html.asp" target="_blank">html</a>&gt;</code>: The root element of an HTML page</li>
-            <li><code>&lt;<a href="https://www.w3schools.com/tags/tag_head.asp" target="_blank">head</a>&gt;</code>: Contains meta-information about the document, such as the title, meta tags, and links to stylesheets</li>
-            <li><code>&lt;<a href="https://www.w3schools.com/tags/tag_title.asp" target="_blank">title</a>&gt;</code>: Sets the title of the document, which is displayed in the browser’s title bar or tab</li>
-            <li><code>&lt;<a href="https://www.w3schools.com/tags/tag_body.asp" target="_blank">body</a>&gt;</code>: Contains the content of the document, such as text, images, links, etc.</li>
-            <li><code>&lt;<a href="https://www.w3schools.com/tags/tag_div.asp" target="_blank">div</a>&gt;</code>: A division of an HTML document</li>
-            <li><code>&lt;<a href="https://www.w3schools.com/tags/tag_p.asp" target="_blank">p</a>&gt;</code>: A paragraph element; browsers automatically add a single blank line before and after each <code>&lt;p&gt;</code></li>
-            <li><code>&lt;<a href="https://www.w3schools.com/tags/tag_br.asp" target="_blank">br</a>&gt;</code>: A single line break</li>
-            <li><code>&lt;<a href="https://www.w3schools.com/tags/tag_a.asp" target="_blank">a</a>&gt;</code>: A hyperlink; the href attribute specifies the URL of the page the link goes to</li>
-            <li><code>&lt;<a href="https://www.w3schools.com/tags/tag_comment.asp" target="_blank">!--  --</a>&gt;</code>: A comment element (text can be added in the middle)</li>
-          </ul>
-          
-          <h3>Semantic HTML</h3>
-          <ul>
-            <li><code>&lt;<a href="https://www.w3schools.com/tags/tag_header.asp" target="_blank">header</a>&gt;</code>: Defines a header for a document or section</li>
-            <li><code>&lt;<a href="https://www.w3schools.com/tags/tag_nav.asp" target="_blank">nav</a>&gt;</code>: Defines a set of navigation links</li>
-            <li><code>&lt;<a href="https://www.w3schools.com/tags/tag_section.asp" target="_blank">section</a>&gt;</code>: Defines a section in a document</li>
-            <li><code>&lt;<a href="https://www.w3schools.com/tags/tag_article.asp" target="_blank">article</a>&gt;</code>: Defines independent, self-contained content</li>
-            <li><code>&lt;<a href="https://www.w3schools.com/tags/tag_footer.asp" target="_blank">footer</a>&gt;</code>: Defines a footer for a document or section</li>
-            <li><code>&lt;<a href="https://www.w3schools.com/tags/tag_aside.asp" target="_blank">aside</a>&gt;</code>: Defines content aside from the main content</li>
-            <li><code>&lt;<a href="https://www.w3schools.com/tags/tag_details.asp" target="_blank">details</a>&gt;</code>: Defines additional details that the user can view or hide</li>
-            <li><code>&lt;<a href="https://www.w3schools.com/tags/tag_figcaption.asp" target="_blank">figcaption</a>&gt;</code>: Defines a caption for a <code>&lt;figure&gt;</code> element</li>
-            <li><code>&lt;<a href="https://www.w3schools.com/tags/tag_figure.asp" target="_blank">figure</a>&gt;</code>: Specifies self-contained content, like illustrations, diagrams, photos, code listings, etc.</li>
-            <li><code>&lt;<a href="https://www.w3schools.com/tags/tag_main.asp" target="_blank">main</a>&gt;</code>: Specifies the main content of a document</li>
-            <li><code>&lt;<a href="https://www.w3schools.com/tags/tag_mark.asp" target="_blank">mark</a>&gt;</code>: Defines highlighted text</li>
-            <li><code>&lt;<a href="https://www.w3schools.com/tags/tag_summary.asp" target="_blank">summary</a>&gt;</code>: Defines a visible heading for a <code>&lt;details&gt;</code> element</li>
-            <li><code>&lt;<a href="https://www.w3schools.com/tags/tag_time.asp" target="_blank">time</a>&gt;</code>: Defines a specific time (or datetime)</li>
+            <li><code><a href="https://www.w3schools.com/tags/tag_html.asp" target="_blank">&lt;html&gt;</a></code> is the root element of an HTML page</li>
+            <li><code><a href="https://www.w3schools.com/tags/tag_head.asp" target="_blank">&lt;head&gt;</a></code> contains meta-information about the document, such as the title, meta tags, and links to stylesheets</li>
+            <li><code><a href="https://www.w3schools.com/tags/tag_title.asp" target="_blank">&lt;title&gt;</a></code> sets the title of the document, which is displayed in the browser’s title bar or tab</li>
+            <li><code><a href="https://www.w3schools.com/tags/tag_body.asp" target="_blank">&lt;body&gt;</a></code> contains the content of the document, such as text, images, links, etc.</li>
+            <li><code><a href="https://www.w3schools.com/tags/tag_div.asp" target="_blank">&lt;div&gt;</a></code> represents a division of an HTML document</li>
+            <li><code><a href="https://www.w3schools.com/tags/tag_p.asp" target="_blank">&lt;p&gt;</a></code> is a paragraph element; browsers automatically add a single blank line before and after each
+            <li><code><a href="https://www.w3schools.com/tags/tag_br.asp" target="_blank">&lt;br&gt;</a></code> is a single line break</li>
+            <li><code><a href="https://www.w3schools.com/tags/tag_a.asp" target="_blank">&lt;a&gt;</a></code> is a hyperlink; the href attribute specifies the URL of the page the link goes to</li>
+            <li><code><a href="https://www.w3schools.com/tags/tag_comment.asp" target="_blank">&lt;!--  --&gt;</a></code> are the brackets which surround a comment in HTML</li>
           </ul>
 
-          <h3>HTML Attributes</h3>
-          <p>Attributes provide additional information about HTML elements. They are always included in the opening tag and usually come in name/value pairs like <code>name="value"</code>.</p>
+          <h3>Semantic HTML</h3>
           <ul>
-            <li><code><a href="https://www.w3schools.com/tags/att_global_class.asp" target="_blank">class</a></code>: Specifies one or more class names for an element (used for CSS and JavaScript).</li>
-            <li><code><a href="https://www.w3schools.com/tags/att_global_id.asp" target="_blank">id</a></code>: Specifies a unique id for an element (used for CSS and JavaScript).</li>
-            <li><code><a href="https://www.w3schools.com/tags/att_global_style.asp" target="_blank">style</a></code>: Specifies an inline CSS style for an element.</li>
-            <li><code><a href="https://www.w3schools.com/tags/att_global_title.asp" target="_blank">title</a></code>: Specifies extra information about an element (displayed as a tooltip).</li>
-            <li><code><a href="https://www.w3schools.com/tags/att_img_alt.asp" target="_blank">alt</a></code>: Specifies an alternative text for images, if the image cannot be displayed.</li>
+            <li><code><a href="https://www.w3schools.com/tags/tag_header.asp" target="_blank">&lt;header&gt;</a></code> defines a header for a document or section, often containting heading elements such as &lt;h1&gt; or &lt;h2&gt;</li>
+            <li><code><a href="https://www.w3schools.com/tags/tag_nav.asp" target="_blank">&lt;nav&gt;</a></code> defines a set of navigation links</li>
+            <li><code><a href="https://www.w3schools.com/tags/tag_section.asp" target="_blank">&lt;section&gt;</a></code> defines a section in a document</li>
+            <li><code><a href="https://www.w3schools.com/tags/tag_article.asp" target="_blank">&lt;article&gt;</a></code> defines independent, self-contained content</li>
+            <li><code><a href="https://www.w3schools.com/tags/tag_footer.asp" target="_blank">&lt;footer&gt;</a></code> defines a footer for a document or section</li>
+            <li><code><a href="https://www.w3schools.com/tags/tag_aside.asp" target="_blank">&lt;aside&gt;</a></code> defines content aside from the main content</li>
+            <li><code><a href="https://www.w3schools.com/tags/tag_details.asp" target="_blank">&lt;details&gt;</a></code> defines additional details that the user can view or hide</li>
+            <li><code><a href="https://www.w3schools.com/tags/tag_figcaption.asp" target="_blank">&lt;figcaption&gt;</a></code> defines a caption for a <code>&lt;figure&gt;</code> element</li>
+            <li><code><a href="https://www.w3schools.com/tags/tag_figure.asp" target="_blank">&lt;figure&gt;</a></code> specifies self-contained content, like illustrations, diagrams, photos, code listings, etc.</li>
+            <li><code><a href="https://www.w3schools.com/tags/tag_main.asp" target="_blank">&lt;main&gt;</a></code> specifies the main content of a document</li>
+            <li><code><a href="https://www.w3schools.com/tags/tag_mark.asp" target="_blank"&lt;>&lt;mark&gt;</a></code> defines highlighted text</li>
+            <li><code><a href="https://www.w3schools.com/tags/tag_summary.asp" target="_blank">&lt;summary&gt;</a></code> defines a visible heading for a <code>&lt;details&gt;</code> element</li>
+            <li><code><a href="https://www.w3schools.com/tags/tag_time.asp" target="_blank">&lt;time&gt;</a></code> defines a specific time (or datetime)</li>
           </ul>
 
           <h3>HTML Forms</h3>
           <p>Forms are used to collect user inputs. Below is an example of a simple HTML form:</p>
           <pre><code>&lt;form action="/submit-form" method="post"&gt;
   &lt;label for="name"&gt;Name:&lt;/label&gt;
-  &lt;input type="text" id="name" name="name" required&gt;
+  &lt;input type="text" id="name" name="name" placeholder="Jane Doe" required&gt;
   &lt;br&gt;
             
   &lt;label for="email"&gt;Email:&lt;/label&gt;
-  &lt;input type="email" id="email" name="email" required&gt;
+  &lt;input type="email" id="email" name="email" placeholder="janedoe@strangemail.com" required&gt;
   &lt;br&gt;
           
   &lt;label for="age"&gt;Age:&lt;/label&gt;
-  &lt;input type="number" id="age" name="age"&gt;
+  &lt;input type="number" id="age" name="age" placeholder="25"&gt;
   &lt;br&gt;
           
   &lt;label for="gender"&gt;Gender:&lt;/label&gt;
@@ -121,40 +117,41 @@
           
   &lt;input type="submit" value="Submit"&gt;
 &lt;/form&gt;</code></pre>
-<form action="/submit-form" method="post">
-  <label for="name">Name:</label>
-  <input type="text" id="name" name="name" required>
-  <br>
-  
-  <label for="email">Email:</label>
-  <input type="email" id="email" name="email" required>
-  <br>
+          <form action="/submit-form" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Jane Doe" required>
+            <br>
 
-  <label for="age">Age:</label>
-  <input type="number" id="age" name="age">
-  <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="janedoe@strangemail.com" required>
+            <br>
 
-  <label for="gender">Gender:</label>
-  <select id="gender" name="gender">
-    <option value="male">Male</option>
-    <option value="female">Female</option>
-    <option value="other">Other</option>
-  </select>
-  <br>
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" placeholder="25">
+            <br>
 
-  <label for="comments">Comments:</label>
-  <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
-  <br>
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender">
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              <option value="other">Other</option>
+            </select>
+            <br>
 
-  <label for="newsletter">Subscribe to newsletter:</label>
-  <input type="checkbox" id="newsletter" name="newsletter">
-  <br>
+            <label for="comments">Comments:</label>
+            <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+            <br>
 
-  <input type="submit" value="Submit">
-</form>
-<br>
-<h5>This form looks cursed, but don't worry! We'll be revisiting it later.</h5>
-<br>  
+            <label for="newsletter">Subscribe to newsletter:</label>
+            <input type="checkbox" id="newsletter" name="newsletter">
+            <br>
+
+            <input type="submit" value="Submit">
+          </form>
+
+          <br>
+          <h5>This form looks cursed, but don't worry! We'll be revisiting it later.</h5>
+          <br>
 
           <h3>HTML Tables</h3>
           <p>Tables are used to display data in a tabular format. Below is an example of a simple HTML table:</p>
@@ -176,27 +173,27 @@
     &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;</code></pre>
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Age</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Dani</td>
-      <td>25</td>
-    </tr>
-    <tr>
-      <td>Sarah</td>
-      <td>28</td>
-    </tr>
-  </tbody>
-</table>
-<br>
-<h5>This table looks cursed, but don't worry! We'll be revisiting it later.</h5>
-<br>  
+          <table>
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Age</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Dani</td>
+                <td>25</td>
+              </tr>
+              <tr>
+                <td>Sarah</td>
+                <td>28</td>
+              </tr>
+            </tbody>
+          </table>
+          <br>
+          <h5>This table looks cursed, but don't worry! We'll be revisiting it later.</h5>
+          <br>
           <h3>HTML Lists</h3>
           <p>HTML supports ordered (numbered) and unordered (bulleted) lists. Below are examples of each:</p>
           <pre><code>&lt;h3&gt;Grocery List&lt;/h3&gt;
@@ -213,44 +210,46 @@
   &lt;li&gt;Life is Strange&lt;/li&gt;
 &lt;/ol&gt;</code></pre>
 
-<p>Grocery List</p>
-<ul>
-  <li>Bananas</li>
-  <li>Crackers</li>
-  <li>Butter</li>
-</ul>
+          <p>Grocery List</p>
+          <ul>
+            <li>Bananas</li>
+            <li>Crackers</li>
+            <li>Butter</li>
+          </ul>
 
-<p>Top 3 Games</p>
-<ol>
-  <li>Dicey Dungeons</li>
-  <li>Genshin Impact</li>
-  <li>Life is Strange</li>
-</ol>
+          <p>Top 3 Games</p>
+          <ol>
+            <li>Dicey Dungeons</li>
+            <li>Genshin Impact</li>
+            <li>Life is Strange</li>
+          </ol>
 
-<h5>Note that the unordered list uses stars for bullet points. This is because of the CSS below that applies to all unordered list items in this doc.</h5>
-<pre><code>ul li::before {
+          <h5>Note that the unordered list uses stars for bullet points. This is because of the CSS below that applies
+            to all unordered list items in this doc.</h5>
+          <pre><code>ul li::before {
   content: "✦";
 }</code></pre>
-<br>
+          <br>
 
 
           <h3>HTML Media</h3>
           <p>HTML supports various media elements, such as images, audio, and video. Here are examples:</p>
           <h4>Image</h4>
           <pre><code>&lt;img src="https://i1.sndcdn.com/artworks-zyYqA8D0BdfuyH28-WeeHrw-t500x500.jpg" alt="An image of a silly cat with an apple" width="300" height="200"&gt;</code></pre>
-            <img src="https://i1.sndcdn.com/artworks-zyYqA8D0BdfuyH28-WeeHrw-t500x500.jpg" alt="An image of a silly cat" width="200" height="200"><br>
-            <br>
-            <h4>Audio</h4>
-            <pre><code>&lt;audio controls&gt;
+          <img src="https://i1.sndcdn.com/artworks-zyYqA8D0BdfuyH28-WeeHrw-t500x500.jpg" alt="An image of a silly cat"
+            width="200" height="200"><br>
+          <br>
+          <h4>Audio</h4>
+          <pre><code>&lt;audio controls&gt;
   &lt;source src="https://commondatastorage.googleapis.com/codeskulptor-assets/jump.ogg" type="audio/ogg"&gt;
     Your browser does not support the audio element.
   &lt;/audio&gt;</code></pre>
-            <audio controls>
-              <source src="https://commondatastorage.googleapis.com/codeskulptor-assets/jump.ogg" type="audio/ogg">
-              Your browser does not support the audio element.
-            </audio>
-            <br>
-            <br>
+          <audio controls>
+            <source src="https://commondatastorage.googleapis.com/codeskulptor-assets/jump.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+          </audio>
+          <br>
+          <br>
           <h4>Video</h4>
           <pre><code>&lt;video width="200px" controls&gt;
   &lt;source src="videos/crow.mp4" type="video/mp4"&gt;
@@ -270,20 +269,18 @@
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
   allowfullscreen&gt;
 &lt;/iframe&gt;</code></pre>
-          <iframe width="560" height="315" 
-  src="https://www.youtube.com/embed/84Vi1Mbhzsw" 
-  title="YouTube video player" 
-  frameborder="0" 
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-  allowfullscreen>
-</iframe>
-<h5>Fun fact: this is my reaction to learning React.</h5>
-          
-<br>
-
-
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/84Vi1Mbhzsw" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+          </iframe>
+          <br>
+          <h5>Fun fact: this is my reaction to learning React.</h5>
+          <br>
           <h3>HTML Canvas</h3>
-          <p>The HTML <code>&lt;<a href="https://www.w3schools.com/html/html5_canvas.asp" target="_blank">canvas</a>&gt;</code> element is used to draw graphics on a web page via JavaScript.</p>
+          <p>The HTML
+            <code>&lt;<a href="https://www.w3schools.com/html/html5_canvas.asp" target="_blank">canvas</a>&gt;</code>
+            element is used to draw graphics on a web page via JavaScript.</p>
           <pre><code>&lt;canvas id="myCanvas" width="400" height="200" style="border:1px solid #ffffff;"&gt;&lt;/canvas&gt;
 &lt;script&gt;
   // Get the canvas element by its ID
@@ -306,7 +303,7 @@
   // Draw text on the canvas
   ctx.fillText('Hello Canvas', 50, 180);
 &lt;/script&gt;</code></pre>
-            <canvas id="myCanvas" width="400" height="200" style="border:1px solid #ffffff;"></canvas>
+          <canvas id="myCanvas" width="400" height="200" style="border:1px solid #ffffff;"></canvas>
           <script>
             // Get the canvas element by its ID
             var canvas = document.getElementById('myCanvas');
@@ -331,104 +328,144 @@
           <br><br>
 
           <h3>HTML Attributes</h3>
-          <p>Attributes provide additional information about HTML elements. They are always included in the opening tag and usually come in name/value pairs like <code>name="value"</code>. Some common attributes are listed below. Each of these attributes (except for alt) are <a href="https://www.w3schools.com/tags/ref_standardattributes.asp">global</a>, meaning they can be used universally with all HTML elements.</p>
+          <p>Attributes provide additional information about HTML elements. They are always included in the opening tag
+            and usually come in name/value pairs like <code>name="value"</code>. Some common attributes are listed
+            below. Each of these attributes (except for alt) are <a
+              href="https://www.w3schools.com/tags/ref_standardattributes.asp">global</a>, meaning they can be used
+            universally with all HTML elements.</p>
           <ul>
-            <li><code><a href="https://www.w3schools.com/tags/att_global_class.asp" target="_blank">class</a></code>: Specifies one or more class names for an element (used for CSS and JavaScript).</li>
-            <li><code><a href="https://www.w3schools.com/tags/att_global_id.asp" target="_blank">id</a></code>: Specifies a unique id for an element (used for CSS and JavaScript).</li>
-            <li><code><a href="https://www.w3schools.com/tags/att_global_style.asp" target="_blank">style</a></code>: Specifies an inline CSS style for an element.</li>
-            <li><code><a href="https://www.w3schools.com/tags/att_global_title.asp" target="_blank">title</a></code>: Specifies extra information about an element (displayed as a tooltip).</li>
-            <li><code><a href="https://www.w3schools.com/tags/att_img_alt.asp" target="_blank">alt</a></code>: Specifies an alternative text for images, if the image cannot be displayed.</li>
+            <li><code><a href="https://www.w3schools.com/tags/att_global_class.asp" target="_blank">class</a></code>:
+              Specifies one or more class names for an element (used for CSS and JavaScript).</li>
+            <li><code><a href="https://www.w3schools.com/tags/att_global_id.asp" target="_blank">id</a></code>:
+              Specifies a unique id for an element (used for CSS and JavaScript).</li>
+            <li><code><a href="https://www.w3schools.com/tags/att_global_style.asp" target="_blank">style</a></code>:
+              Specifies an inline CSS style for an element.</li>
+            <li><code><a href="https://www.w3schools.com/tags/att_global_title.asp" target="_blank">title</a></code>:
+              Specifies extra information about an element (displayed as a tooltip).</li>
+            <li><code><a href="https://www.w3schools.com/tags/att_img_alt.asp" target="_blank">alt</a></code>: Specifies
+              an alternative text for images, if the image cannot be displayed.</li>
           </ul>
 
-          <p>Note that a range of attributes can be used for different elements. For example, if you'd like to add styling to an element without using a class or id, you can use the style tag. </p>
+          <p>Note that a range of attributes can be used for different elements. For example, if you'd like to add
+            styling to an element without using a class or id, you can use the style tag. </p>
           <pre><code>&lt;p style="color:red;"&gt;This is a red paragraph.&lt;/p&gt;</code></pre>
         </div>
 
         <div class="tab-pane fade" id="css" role="tabpanel" aria-labelledby="css-tab">
           <h2>CSS Notes</h2>
-          <p>CSS (Cascading Style Sheets) is used to style and layout web pages. Below are some common concepts and properties.</p>
+          <p>CSS (Cascading Style Sheets) is used to style and layout web pages. Below are some common concepts and
+            properties.</p>
           <h3>Selectors</h3>
-          <ul>
-            <li><code><a href="https://www.w3schools.com/cssref/css_selectors.asp" target="_blank">Selectors</a></code>: Used to select the HTML element(s) you want to style.</li>
-            <li><code><a href="https://www.w3schools.com/cssref/sel_element.asp" target="_blank">Element Selector</a></code>: Selects all elements of a given type (e.g., <code>p</code>).</li>
-            <li><code><a href="https://www.w3schools.com/cssref/sel_class.asp" target="_blank">Class Selector</a></code>: Selects all elements with a given class (e.g., <code>.classname</code>).</li>
-            <li><code><a href="https://www.w3schools.com/cssref/sel_id.asp" target="_blank">ID Selector</a></code>: Selects a single element with a given ID (e.g., <code>#idname</code>).</li>
-            <li><code><a href="https://www.w3schools.com/cssref/sel_attribute.asp" target="_blank">Attribute Selector</a></code>: Selects elements with a specific attribute (e.g., <code>[type="text"]</code>).</li>
+          <ul><li><code><a href="https://www.w3schools.com/cssref/css_selectors.asp" target="_blank">Selectors</a></code>:
+              Used to select the HTML element(s) you want to style.</li>
+            <li><code><a href="https://www.w3schools.com/cssref/sel_element.asp" target="_blank">Element Selector</a></code>:
+              Selects all elements of a given type (e.g., <code>p</code>).</li>
+            <li><code><a href="https://www.w3schools.com/cssref/sel_class.asp" target="_blank">Class Selector</a></code>:
+              Selects all elements with a given class (e.g., <code>.classname</code>).</li>
+            <li><code><a href="https://www.w3schools.com/cssref/sel_id.asp" target="_blank">ID Selector</a></code>:
+              Selects a single element with a given ID (e.g., <code>#idname</code>).</li>
+            <li><code><a href="https://www.w3schools.com/cssref/sel_attribute.asp" target="_blank">Attribute Selector</a></code>:
+              Selects elements with a specific attribute (e.g., <code>[type="text"]</code>).</li>
           </ul>
           <h3>Box Model</h3>
-          <p>The CSS box model describes the rectangular boxes generated for elements in the document tree and consists of: margins, borders, padding, and the actual content.</p>
+          <p>The CSS <a href="https://www.w3schools.com/css/css_boxmodel.asp" target="_blank">Box Model</a> describes the rectangular boxes generated for elements in the document tree and consists of: margins, borders, padding, and the actual content.</p>
           <ul>
-            <li><code><a href="https://www.w3schools.com/css/css_boxmodel.asp" target="_blank">Box Model</a></code>: Describes the rectangular boxes generated for elements in the document tree.</li>
             <li><code><a href="https://www.w3schools.com/css/css_margin.asp" target="_blank">Margin</a></code>: The outermost layer, used to create space around elements.</li>
             <li><code><a href="https://www.w3schools.com/css/css_padding.asp" target="_blank">Padding</a></code>: The space between the content and the border of an element.</li>
             <li><code><a href="https://www.w3schools.com/css/css_border.asp" target="_blank">Border</a></code>: The line surrounding the padding (if any) and content.</li>
           </ul>
+          <img src="https://miro.medium.com/v2/resize:fit:408/1*sKnLrT1TtqWDZg7GWoBCow.png" width="400" height="200">
+          <br><br>
           <h3>Common Properties</h3>
           <ul>
-            <li><code><a href="https://www.w3schools.com/cssref/pr_background-color.asp" target="_blank">background-color</a></code>: Sets the background color of an element.</li>
-            <li><code><a href="https://www.w3schools.com/cssref/pr_font_font-family.asp" target="_blank">font-family</a></code>: Specifies the font for an element.</li>
-            <li><code><a href="https://www.w3schools.com/cssref/pr_text_text-align.asp" target="_blank">text-align</a></code>: Specifies the horizontal alignment of text.</li>
-            <li><code><a href="https://www.w3schools.com/cssref/pr_pos_position.asp" target="_blank">position</a></code>: Specifies the type of positioning method used for an element (static, relative, absolute, fixed, or sticky).</li>
-            <li><code><a href="https://www.w3schools.com/cssref/pr_dim_width.asp" target="_blank">width</a></code>: Sets the width of an element.</li>
-            <li><code><a href="https://www.w3schools.com/cssref/pr_dim_height.asp" target="_blank">height</a></code>: Sets the height of an element.</li>
+            <li><code><a href="https://www.w3schools.com/cssref/pr_background-color.asp" target="_blank">background-color</a></code>:
+              Sets the background color of an element.</li>
+            <li><code><a href="https://www.w3schools.com/cssref/pr_font_font-family.asp" target="_blank">font-family</a></code>:
+              Specifies the font for an element.</li>
+            <li><code><a href="https://www.w3schools.com/cssref/pr_text_text-align.asp" target="_blank">text-align</a></code>:
+              Specifies the horizontal alignment of text.</li>
+            <li><code><a href="https://www.w3schools.com/cssref/pr_pos_position.asp" target="_blank">position</a></code>:
+              Specifies the type of positioning method used for an element (static, relative, absolute, fixed, or
+              sticky).</li>
+            <li><code><a href="https://www.w3schools.com/cssref/pr_dim_width.asp" target="_blank">width</a></code>: Sets
+              the width of an element.</li>
+            <li><code><a href="https://www.w3schools.com/cssref/pr_dim_height.asp" target="_blank">height</a></code>:
+              Sets the height of an element.</li>
           </ul>
           <h3>Flexbox</h3>
           <p>CSS Flexbox is a layout model that allows for the easy alignment of elements within a container.</p>
           <ul>
-            <li><code><a href="https://www.w3schools.com/css/css3_flexbox.asp" target="_blank">Flexbox</a></code>: A layout model for designing complex layouts with ease.</li>
-            <li><code><a href="https://www.w3schools.com/cssref/css3_pr_flex.asp" target="_blank">flex</a></code>: A shorthand property for flex-grow, flex-shrink, and flex-basis.</li>
-            <li><code><a href="https://www.w3schools.com/cssref/css3_pr_justify-content.asp" target="_blank">justify-content</a></code>: Aligns the flexible container’s items when the items do not use all available space on the main-axis.</li>
-            <li><code><a href="https://www.w3schools.com/cssref/css3_pr_align-items.asp" target="_blank">align-items</a></code>: Aligns items along the cross-axis.</li>
+            <li><code><a href="https://www.w3schools.com/css/css3_flexbox.asp" target="_blank">Flexbox</a></code>: A
+              layout model for designing complex layouts with ease.</li>
+            <li><code><a href="https://www.w3schools.com/cssref/css3_pr_flex.asp" target="_blank">flex</a></code>: A
+              shorthand property for flex-grow, flex-shrink, and flex-basis.</li>
+            <li>
+              <code><a href="https://www.w3schools.com/cssref/css3_pr_justify-content.asp" target="_blank">justify-content</a></code>:
+              Aligns the flexible container’s items when the items do not use all available space on the main-axis.</li>
+            <li>
+              <code><a href="https://www.w3schools.com/cssref/css3_pr_align-items.asp" target="_blank">align-items</a></code>:
+              Aligns items along the cross-axis.</li>
           </ul>
           <h3>Grid Layout</h3>
           <p>CSS Grid Layout is a two-dimensional layout system for the web.</p>
           <ul>
-            <li><code><a href="https://www.w3schools.com/css/css_grid.asp" target="_blank">Grid Layout</a></code>: A two-dimensional layout system for web design.</li>
-            <li><code><a href="https://www.w3schools.com/cssref/pr_grid.asp" target="_blank">grid</a></code>: A shorthand property for grid-template-rows, grid-template-columns, grid-template-areas, grid-auto-rows, grid-auto-columns, and grid-auto-flow.</li>
-            <li><code><a href="https://www.w3schools.com/cssref/pr_grid-template-columns.asp" target="_blank">grid-template-columns</a></code>: Defines the columns of the grid with a space-separated list of values.</li>
-            <li><code><a href="https://www.w3schools.com/cssref/pr_grid-template-rows.asp" target="_blank">grid-template-rows</a></code>: Defines the rows of the grid with a space-separated list of values.</li>
+            <li><code><a href="https://www.w3schools.com/css/css_grid.asp" target="_blank">Grid Layout</a></code>: A
+              two-dimensional layout system for web design.</li>
+            <li><code><a href="https://www.w3schools.com/cssref/pr_grid.asp" target="_blank">grid</a></code>: A
+              shorthand property for grid-template-rows, grid-template-columns, grid-template-areas, grid-auto-rows,
+              grid-auto-columns, and grid-auto-flow.</li>
+            <li>
+              <code><a href="https://www.w3schools.com/cssref/pr_grid-template-columns.asp" target="_blank">grid-template-columns</a></code>:
+              Defines the columns of the grid with a space-separated list of values.</li>
+            <li>
+              <code><a href="https://www.w3schools.com/cssref/pr_grid-template-rows.asp" target="_blank">grid-template-rows</a></code>:
+              Defines the rows of the grid with a space-separated list of values.</li>
           </ul>
           <h3>Media Queries</h3>
           <p>Media queries are used to apply different styles for different devices or screen sizes.</p>
           <ul>
-            <li><code><a href="https://www.w3schools.com/css/css_rwd_mediaqueries.asp" target="_blank">Media Queries</a></code>: Used to apply different styles for different devices or screen sizes.</li>
-            <li><code><a href="https://www.w3schools.com/cssref/css3_pr_mediaquery.asp" target="_blank">@media</a></code>: A rule used to apply styles based on the result of one or more media queries.</li>
+            <li>
+              <code><a href="https://www.w3schools.com/css/css_rwd_mediaqueries.asp" target="_blank">Media Queries</a></code>:
+              Used to apply different styles for different devices or screen sizes.</li>
+            <li>
+              <code><a href="https://www.w3schools.com/cssref/css3_pr_mediaquery.asp" target="_blank">@media</a></code>:
+              A rule used to apply styles based on the result of one or more media queries.</li>
           </ul>
         </div>
         <div class="tab-pane fade" id="javascript" role="tabpanel" aria-labelledby="javascript-tab">
           <h2>JavaScript Notes</h2>
           <p>Here are some notes about JavaScript...</p>
         </div>
-        
+
         <div class="tab-pane fade" id="bootstrap" role="tabpanel" aria-labelledby="bootstrap-tab">
           <h2>Bootstrap Notes</h2>
           <p>Here are some notes about Bootstrap...</p>
         </div>
-        
+
         <div class="tab-pane fade" id="react" role="tabpanel" aria-labelledby="react-tab">
           <h2>React Notes</h2>
           <p>Here are some notes about React:</p>
-        
+
           <h3>1. Navigate to the Project Folder</h3>
           <p>Open your terminal and navigate to your project folder using the following command:</p>
           <pre><code>cd path/to/your/project/folder</code></pre>
-        
+
           <h3>2. Create a New React App Using Vite</h3>
           <p>To create a new React application using Vite, run the following command:</p>
           <pre><code>npm create vite@latest quote-generator -- --template react</code></pre>
-        
+
           <h3>3. Navigate to Your New React App</h3>
           <p>Change directory to your new React app folder:</p>
           <pre><code>cd quote-generator</code></pre>
-        
+
           <h3>4. Install Dependencies</h3>
           <p>To install all necessary dependencies, run:</p>
           <pre><code>npm install</code></pre>
-        
+
           <h3>5. Start the Development Server</h3>
           <p>To start the Vite development server, run:</p>
           <pre><code>npm run dev</code></pre>
-        
+
           <h3>6. Basic React Component Example</h3>
           <p>Here's a basic example of a React functional component:</p>
           <pre><code>import React from 'react';
@@ -446,22 +483,28 @@
         
         export default App;
         </code></pre>
-        
+
           <h3>7. Adding Bootstrap</h3>
           <p>To add Bootstrap to your React project, first install it:</p>
           <pre><code>npm install bootstrap</code></pre>
           <p>Then import Bootstrap in your <code>main.jsx</code> file:</p>
           <pre><code>import 'bootstrap/dist/css/bootstrap.min.css';</code></pre>
-        
+
           <h3>8. Common React Commands</h3>
           <p>Here are some common commands used in React projects:</p>
           <ul>
-            <li><strong>Install a package:</strong> <pre><code>npm install package-name</code></pre></li>
-            <li><strong>Build the project:</strong> <pre><code>npm run build</code></pre></li>
-            <li><strong>Run tests:</strong> <pre><code>npm test</code></pre></li>
+            <li><strong>Install a package:</strong>
+              <pre><code>npm install package-name</code></pre>
+            </li>
+            <li><strong>Build the project:</strong>
+              <pre><code>npm run build</code></pre>
+            </li>
+            <li><strong>Run tests:</strong>
+              <pre><code>npm test</code></pre>
+            </li>
           </ul>
         </div>
-        
+
       </div>
     </div>
   </div>

@@ -80,12 +80,14 @@ ul li::before {
   font-weight: bold;
   display: inline-block;
   width: 2em; 
-  font-size: 11px;
+  font-size: 13px;
 }
 
 a {
   color: #00beef;
+  font-weight: bold !important;
   text-decoration: solid;
+  font-size: 18px !important;
 }
 
 h1 { 
@@ -118,6 +120,33 @@ h5 {
 /* I wanted to pull my hair our for about half an hour because I didn't understand why my my HTML and CSS sections reached the full width of the screen while the others didn't even though they were functionally and structurally exactly the same. It was some weird .d-flex nonsense that didn't apply to the first two tabs for some bizarre reason. I overwrote by changing the display to block.*/
 .d-flex {
   display: block !important;
+}
+
+/* CSS Section */
+.box-model-example {
+  width: 200px;
+  padding: 20px;
+  border: 5px solid #00BEEF;
+  margin: 15px;
+  background-color: #f9f9f9;
+}
+
+
+@media (max-width: 767px) {
+  .sidebar {
+    height: 100vh;
+    z-index: 1000;
+  }
+
+  #main-doc {
+    margin-left: 0;
+    padding-left: 0;
+    padding-top: 60px; 
+  }
+
+  .d-flex {
+    flex-direction: column;
+  }
 }
 
 
